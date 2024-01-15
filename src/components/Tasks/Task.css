@@ -1,0 +1,28 @@
+.task {
+    height: 20px;
+    /* Common styles for tasks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    text-emphasis: ellipsis;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  
+  .task.type1 {
+    /* Additional styles for tasks with type1 */
+    background: #27ae60;
+  }
+  
+  .task.type2 {
+    /* Additional styles for tasks with type2 */
+    background: #e74c3c;
+  }
+  
+  .task.type3 {
+    /* Additional styles for tasks with type3 */
+    background: #f39c12;
+  }

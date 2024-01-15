@@ -1,0 +1,45 @@
+/* GanttChart.css */
+.gantt-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+  }
+  
+  .staff-table {
+    /* Style your left table for staff here */
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+  }  
+  .staff-table th, .staff-table td {
+    /* padding: 8px; */
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .staff-table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  .trow{
+    height: 25px;
+  }
+  .tdes{
+    height: 40px;
+  }
+  .chart{
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+    flex: 1;
+    
+  }
+  .chart-area {
+    /* Style your right chart area for tasks here */
+    flex: 1;
+    height: 100%;
+    position: relative;
+  }

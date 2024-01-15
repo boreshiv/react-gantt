@@ -1,0 +1,33 @@
+.timeline-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px
+}
+.timeline-tick-day{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline-tick-month{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-tick-day:first-child{
+    border-left: 1px solid;
+}
+.timeline-tick-month:first-child{
+    border-left: 1px solid;
+}
