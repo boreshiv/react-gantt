@@ -43,3 +43,30 @@
     height: 100%;
     position: relative;
   }
+  .chart-area-guideline{
+    position: absolute;
+    top: -1px;
+    width: 2px;
+    border-right:2px dashed rgba(0, 0, 0, 0.568);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .chart-area-scaler{
+    position: absolute;
+    top: -1px;
+    width: 2px;
+    border-right:2px solid rgba(0, 0, 0, 0.568);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .chart-area-scaler-title{
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    z-index: 1;
+    left: 2px;
+    background-color: teal;
+    color: white;
+    font-size: 12px;
+  }
