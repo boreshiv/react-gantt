@@ -11,7 +11,7 @@ function App() {
   const [startDate] = useState(new Date("2024-01-12"))
   const [endDate] = useState(() => {
     const date = new Date()
-    date.setDate(startDate.getDate() + 30)
+    date.setDate(startDate.getDate() + 45)
     return date
   })
   const ganttRef = useRef(null);
