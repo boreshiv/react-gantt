@@ -8,7 +8,11 @@ function App() {
   const [tasks, setTasks] = useState(TASKDATA);
   const [staffs, setStaffs] = useState(STAFFDATA);
   const [timelineScale] = useState('days'); // 'minutes' or 'days'
-  const [startDate] = useState(new Date("2024-01-12"))
+  const [startDate] = useState(()=>{
+    const date = new Date()
+    date.setHours(0,0,0,0)
+    return date
+  })
   const [endDate] = useState(() => {
     const date = new Date()
     date.setDate(startDate.getDate() + 45)
