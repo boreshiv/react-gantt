@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './DataTable.css';
 const DataTable = ({ rowData, columnData ,onScroll},ref) => {
     return (
@@ -21,4 +21,4 @@ const DataTable = ({ rowData, columnData ,onScroll},ref) => {
     );
 };
 
-export default DataTable;
+export default memo(DataTable);
