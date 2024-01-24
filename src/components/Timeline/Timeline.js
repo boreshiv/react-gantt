@@ -6,14 +6,13 @@ const generateTimelineTicks = (start, end, scale) => {
     let startDate = new Date(start);
     let endDate = new Date(end);
     const monthTicks = [];
-
     if (scale === "days") {
         let dayDiff = (endDate - startDate) / 1000 / 60 / 60 / 24
         let startMonth = startDate.getMonth()
         let currentIndex = 0
         for (let i = 0; i < dayDiff; i++) {
             const month = startDate.getMonth()
-            const date = new Date(startDate)
+            const date = new Date(startDate) 
             if (i === 0) {
                 monthTicks.push({ month: date.toLocaleDateString(), days: [] })
             } else if (month !== startMonth) {
@@ -50,8 +49,10 @@ const Timeline = (props) => {
                                     tickScale = 2
                                 } else if (config.scaleWidth <= 100 && config.scaleWidth > 80) {
                                     tickScale = 3
-                                } else if (config.scaleWidth <= 80 && config.scaleWidth >= 60) {
+                                } else if (config.scaleWidth <= 80 && config.scaleWidth > 60) {
                                     tickScale = 4
+                                } else if (config.scaleWidth <= 60) {
+                                    tickScale = 5
                                 }
                                 return <div key={day} className="timeline-tick-day" style={{ width: `${config.scaleWidth}px` }}>
                                     <div className='timeline-date'>{day.toLocaleDateString()}</div>
